@@ -13,7 +13,7 @@ module ActsAsFu
     def self.connect!(config={})
       @@log = ""
       self.logger = Logger.new(StringIO.new(log))
-      self.connection.disconnect! rescue nil
+#      self.connection.disconnect! rescue nil
       self.establish_connection(config)
     end
   end
